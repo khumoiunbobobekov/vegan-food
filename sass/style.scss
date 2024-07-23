@@ -1,0 +1,230 @@
+@font-face {
+  font-family: Hanalei;
+  src: url("/fonts/HanaleiFill-Regular.woff");
+}
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family:  sans-serif;
+  scroll-behavior: smooth;
+}
+
+.main-head {
+  nav {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 10vh;
+    align-items: center;
+    flex-wrap: wrap;
+     ul {
+      display: flex;
+      justify-content: space-around;
+      flex: 1 1 40rem;
+      li {
+        list-style: none;
+        margin: 0.5rem;
+        a {
+          font-size: 1.6rem
+          ;
+          text-decoration: none;
+          color: #909090;
+         &:hover {
+            color: black;
+            font-weight: bolder;
+          }
+        }
+      }
+    }
+    #logo {
+      flex: 1 1 40rem;
+      font-family: Hanalei; 
+      font-size: 2.6rem;
+      text-align: center;
+    }
+  }
+}
+
+/* hero (section) */
+.hero{
+  height: 300px;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h2{
+    font-size: 4rem;
+    text-align: center;
+    }
+
+  h3 {
+    width: 800px;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+    padding: 5rem;
+    display: flex;
+    text-align: justify;
+    text-align: center;
+    justify-content: center;
+  }
+    .option{
+      width: 700px;
+      height: 4px;
+      background: black;
+      transform: translateY(-50%);
+    }
+}
+.recipes-head {
+  padding: 3rem;
+  min-height:30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h2 {
+
+    font-size: 4rem;
+    text-align: center;
+  }
+
+}
+
+.cards {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    min-height: 70vh;
+    justify-content: center;
+    align-items: center;        
+    flex-wrap: wrap;
+    text-align: center;
+
+    .card{
+      min-height: 40vh;
+      flex: 1 1 40rem;
+      margin: 2rem 5rem;
+      width:20%;
+        display: flex;
+        flex-wrap: wrap;
+        .image-1,.image-2,.image-3,.image-4 {
+      flex: 1 1 25rem;
+        width: 100%;
+        height: 80%;
+        position: relative;
+        .card-food {
+          width: 600px;
+          height: 800px;
+        top: 0;
+        left: 0;
+        position: absolute;
+        background: rgba(0,0,0,0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 0;
+        transition: 0.7s;
+        &:hover {
+          opacity: 1;
+          cursor: pointer;
+        }
+        p {
+          font-size: 4rem;
+          color: #909090;
+        }
+        }
+        }
+        
+      } 
+}
+
+footer {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  margin-right: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  p {
+    font-size: 1.8rem;
+    font-weight: 500;
+  a {
+      font-size: 1.8rem
+      ;
+      text-decoration: none;
+      color: #909090;
+     &:hover {
+        color: black;
+        text-decoration: underline;  }
+  }
+}
+}
+
+
+
+@media screen and (max-width: 940px) {
+  html{
+      font-size: 55%;
+  }
+  nav{
+      text-align: center;
+  }
+  #logo {
+      padding: 2rem;
+  }
+  .hero {
+    font-size: 55%;
+    h3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 100%;
+    }
+    .option{
+      width: 500px;
+      height: 4px;
+      background: black;
+      transform: translateY(-50%);
+    }
+  }
+
+  .recipes-head {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    width: 70%;
+    .cards{
+  .card{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+      width:10%;
+        .image-1,.image-2,.image-3,.image-4 {
+          width: 100%;
+          padding: 10px;
+            img {
+            width: 300px;
+              .card-food {
+                width: 100%;
+                height: 100%;
+              }
+            }
+            }
+          }
+  }
+}
+}
+  
+      
